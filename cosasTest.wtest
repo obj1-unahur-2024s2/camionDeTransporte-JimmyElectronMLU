@@ -1,8 +1,38 @@
 import cosas.*
 
-describe "group of test for cosas" {
+describe "grupo de test para cosas" {
 
-  test "first test" {
+  test "Cada ladrillo pesa 2 kilos" {
+    //Arrange
+
+    //Act
+    paqueteLadrillos.cantidadLadrillos(1)
+
+    //Assert
+    assert.that(paqueteLadrillos.peso() == 2)
+  }
+
+
+   test "No importa cuantos paquetes de ladrillos se le agregue, la peligrosidad siempre sera dos " {
+    //Arrange
+
+    //Act
+    paqueteLadrillos.cantidadLadrillos(20)
+
+    //Assert
+    assert.that(paqueteLadrillos.peligrosidad() == 2)
+  }
+
+   test "first test" {
+    assert.that(true)
+  }
+   test "first test" {
+    assert.that(true)
+  }
+   test "first test" {
+    assert.that(true)
+  }
+   test "first test" {
     assert.that(true)
   }
 
